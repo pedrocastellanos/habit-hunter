@@ -173,35 +173,7 @@ export const UNLOCKABLE_ITEMS: UnlockableItem[] = [
     },
 ]
 
-export const DEFAULT_TASKS: Task[] = [
-    {
-        id: 'task-water',
-        title: 'Tomar 2L de agua',
-        description: 'Mantener hidratacion diaria.',
-        priority: 'low',
-        reward: PRIORITY_REWARD.low,
-        completed: false,
-        createdAt: Date.now() - 1000 * 60 * 60 * 8,
-    },
-    {
-        id: 'task-workout',
-        title: 'Entrenar 30 minutos',
-        description: 'Bloque principal de energia.',
-        priority: 'medium',
-        reward: PRIORITY_REWARD.medium,
-        completed: false,
-        createdAt: Date.now() - 1000 * 60 * 60 * 5,
-    },
-    {
-        id: 'task-reading',
-        title: 'Leer 20 paginas',
-        description: 'Sesion de foco profundo.',
-        priority: 'high',
-        reward: PRIORITY_REWARD.high,
-        completed: false,
-        createdAt: Date.now() - 1000 * 60 * 60 * 2,
-    },
-]
+export const DEFAULT_TASKS: Task[] = []
 
 export function getLevelFromXp(xp: number): number {
     return Math.floor(xp / LEVEL_STEP) + 1

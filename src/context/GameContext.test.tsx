@@ -20,12 +20,12 @@ describe('GameContext - useGame Hook', () => {
     expect(result.current.level).toBeDefined()
   })
 
-  it('should initialize with default tasks', () => {
+  it('should initialize without default tasks', () => {
     const { result } = renderHook(() => useGame(), {
       wrapper: GameProvider,
     })
 
-    expect(result.current.tasks.length).toBeGreaterThan(0)
+    expect(result.current.tasks.length).toBe(0)
     expect(result.current.xp).toBe(0)
     expect(result.current.level).toBe(1)
   })
@@ -55,6 +55,14 @@ describe('GameContext - useGame Hook', () => {
       wrapper: GameProvider,
     })
 
+    act(() => {
+      result.current.addTask({
+        title: 'Task to complete',
+        description: 'Complete me',
+        priority: 'medium',
+      })
+    })
+
     const taskId = result.current.tasks[0].id
     const initialXp = result.current.xp
     const taskReward = result.current.tasks[0].reward
@@ -71,6 +79,14 @@ describe('GameContext - useGame Hook', () => {
   it('should allow reopening tasks', () => {
     const { result } = renderHook(() => useGame(), {
       wrapper: GameProvider,
+    })
+
+    act(() => {
+      result.current.addTask({
+        title: 'Task to reopen',
+        description: 'Reopen me',
+        priority: 'low',
+      })
     })
 
     const taskId = result.current.tasks[0].id
@@ -91,6 +107,14 @@ describe('GameContext - useGame Hook', () => {
   it('should allow removing tasks', () => {
     const { result } = renderHook(() => useGame(), {
       wrapper: GameProvider,
+    })
+
+    act(() => {
+      result.current.addTask({
+        title: 'Task to remove',
+        description: 'Remove me',
+        priority: 'high',
+      })
     })
 
     const taskId = result.current.tasks[0].id
@@ -125,6 +149,14 @@ describe('GameContext - useGame Hook', () => {
     })
 
     expect(result.current.completedTaskCount).toBe(0)
+
+    act(() => {
+      result.current.addTask({
+        title: 'Task to track',
+        description: 'Track completion',
+        priority: 'medium',
+      })
+    })
 
     act(() => {
       result.current.completeTask(result.current.tasks[0].id)
@@ -180,6 +212,14 @@ describe('GameContext - useGame Hook', () => {
   it('should not complete task if already completed', () => {
     const { result } = renderHook(() => useGame(), {
       wrapper: GameProvider,
+    })
+
+    act(() => {
+      result.current.addTask({
+        title: 'Task idempotency',
+        description: 'Do not double reward',
+        priority: 'medium',
+      })
     })
 
     const taskId = result.current.tasks[0].id

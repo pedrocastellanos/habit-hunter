@@ -42,23 +42,7 @@ const ITEM_BY_ID = new Map(UNLOCKABLE_ITEMS.map((item) => [item.id, item]))
 const PRIORITY_SET: Set<Priority> = new Set(['low', 'medium', 'high'])
 
 function getLocalizedDefaultTasks(): Task[] {
-    return DEFAULT_TASKS.map((task) => {
-        const seedKeyByTaskId: Record<string, string> = {
-            'task-water': 'taskWater',
-            'task-workout': 'taskWorkout',
-            'task-reading': 'taskReading',
-        }
-        const key = seedKeyByTaskId[task.id]
-        if (!key) return task
-
-        return {
-            ...task,
-            title: i18n.t(`tasks.seed.${key}.title`, { defaultValue: task.title }),
-            description: i18n.t(`tasks.seed.${key}.description`, {
-                defaultValue: task.description,
-            }),
-        }
-    })
+    return [...DEFAULT_TASKS]
 }
 
 function createDefaultState(): PersistedState {

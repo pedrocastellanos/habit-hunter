@@ -128,8 +128,8 @@ describe('Catalog - Unlockable Items', () => {
 })
 
 describe('Catalog - Default Tasks', () => {
-  it('should have default tasks', () => {
-    expect(DEFAULT_TASKS.length).toBeGreaterThan(0)
+  it('should not include hardcoded default tasks', () => {
+    expect(DEFAULT_TASKS.length).toBe(0)
   })
 
   it('should have valid task structure', () => {
