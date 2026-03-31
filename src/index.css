@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;700&display=swap');
+@import "tailwindcss";
+@import "material-symbols";
+
+@layer base {
+  :root {
+    @apply font-medium leading-[1.4] text-[#d3e7ff] bg-[#02040a] [text-rendering:optimizeLegibility] [-webkit-font-smoothing:antialiased] [-moz-osx-font-smoothing:grayscale];
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+  }
+
+  * {
+    @apply box-border;
+    cursor: url('/src/assets/cursor.svg') 4 4, auto;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-[100svh] overflow-x-hidden;
+  }
+
+  a,
+  button,
+  [role="button"],
+  [role="menuitem"],
+  [role="option"],
+  [role="combobox"],
+  [role="listbox"],
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  select,
+  option,
+  label,
+  summary,
+  .cursor-pointer {
+    cursor: url('/src/assets/cursor-pointer.svg') 24 24, pointer !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  strong,
+  button {
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  }
+
+  p,
+  span,
+  li {
+    @apply tracking-[0.02em];
+  }
+
+  #root {
+    @apply w-full min-h-[100svh];
+  }
+}
