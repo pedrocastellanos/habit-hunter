@@ -26,6 +26,11 @@ El concepto es simple pero poderoso:
 - ⚔️ **Combatir enemigos** = Completar y conquistar tus objetivos
 - 🏆 **Ganar experiencia** = Sentir progreso real en tu vida
 
+### 💾 Persistencia de Datos
+
+Habit Hunter no usa base de datos.
+Toda la información del usuario (tareas, progreso, personaje y equipamiento) se guarda únicamente en el `localStorage` del navegador.
+
 ---
 
 ## 🎯 Concepto de Gameplay
