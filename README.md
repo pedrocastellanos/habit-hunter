@@ -12,6 +12,9 @@
 
 [🎮 Demo](https://hackaton.pedrocastellanos.me) • [🚀 Inicio Rápido](#-inicio-rápido) • [📖 Guía Completa](#-guía-completa)
 
+<img width="1866" height="849" alt="image" src="https://github.com/user-attachments/assets/debde8c2-a65d-4e81-a752-ed43757829ed" />
+
+
 </div>
 
 ---
