@@ -33,6 +33,40 @@ const resources = {
                 anomaliesHunted: 'Anomalias neutralizadas',
                 activeMissions: 'Misiones activas',
                 scanning: 'Escaneando',
+                activeSyncEstablished: 'SINCRONIZACION ACTIVA ESTABLECIDA',
+                initializeSequence: 'INICIAR SECUENCIA',
+                launchMission: 'INICIAR MISION',
+                feature: {
+                    focusScanner: {
+                        title: 'Escaner de enfoque',
+                        description:
+                            'Deteccion algoritmica avanzada de tus habitos activos. Rastrea el compromiso e identifica detonantes del entorno.',
+                    },
+                    executionPulse: {
+                        title: 'Pulso de ejecucion',
+                        description:
+                            'Circuiteria de recompensas en tiempo real con retroalimentacion inmediata al neutralizar tareas.',
+                    },
+                    operatorEvolution: {
+                        title: 'Evolucion del operador',
+                        description:
+                            'Avanza de rango, desbloquea equipo encriptado y especializa tu clase para dominar tus objetivos.',
+                    },
+                },
+                steps: {
+                    mapProtocols: {
+                        title: 'Mapear protocolos',
+                        description: 'Define tus habitos como objetivos dentro de la simulacion.',
+                    },
+                    executeHunt: {
+                        title: 'Ejecutar caceria',
+                        description: 'Sigue tu progreso y elimina tareas diarias.',
+                    },
+                    ascend: {
+                        title: 'Ascender',
+                        description: 'Sube de nivel y personaliza tu panel de operador.',
+                    },
+                },
             },
             tasks: {
                 taskManagementSystem: 'SISTEMA DE GESTION DE TAREAS',
@@ -184,6 +218,40 @@ const resources = {
                 anomaliesHunted: 'Anomalies Hunted',
                 activeMissions: 'Active Missions',
                 scanning: 'Scanning',
+                activeSyncEstablished: 'ACTIVE SYNC ESTABLISHED',
+                initializeSequence: 'INITIALIZE SEQUENCE',
+                launchMission: 'LAUNCH MISSION',
+                feature: {
+                    focusScanner: {
+                        title: 'Focus Scanner',
+                        description:
+                            'Advanced algorithmic detection of your active habits. Automatically tracks engagement and identifies environmental triggers.',
+                    },
+                    executionPulse: {
+                        title: 'Execution Pulse',
+                        description:
+                            'Real-time reward circuitry with immediate feedback as you neutralize tasks.',
+                    },
+                    operatorEvolution: {
+                        title: 'Operator Evolution',
+                        description:
+                            'Progress through the ranks, unlock encrypted gear, and specialize your operator class.',
+                    },
+                },
+                steps: {
+                    mapProtocols: {
+                        title: 'Map Protocols',
+                        description: 'Define your habits as targets in the simulation.',
+                    },
+                    executeHunt: {
+                        title: 'Execute Hunt',
+                        description: 'Track your progress and eliminate daily tasks.',
+                    },
+                    ascend: {
+                        title: 'Ascend',
+                        description: 'Level up and customize your operator dashboard.',
+                    },
+                },
             },
             tasks: {
                 taskManagementSystem: 'TASK MANAGEMENT SYSTEM',

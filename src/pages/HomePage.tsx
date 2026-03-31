@@ -224,7 +224,7 @@ export function HomePage() {
                                 className="absolute -bottom-2 px-4 py-1 bg-[#010409] border border-[#00ff88]/50 text-[#00ff88] text-[10px]"
                                 style={{ fontFamily: 'Orbitron, sans-serif' }}
                             >
-                                ACTIVE_SYNC_ESTABLISHED
+                                {t('home.activeSyncEstablished')}
                             </div>
                         </div>
                     </div>
@@ -238,8 +238,8 @@ export function HomePage() {
             >
                 <FeatureCard
                     icon="🔬"
-                    title="Focus Scanner"
-                    description="Advanced algorithmic detection of your active habits. Automatically tracks engagement and identifies environmental triggers."
+                    title={t('home.feature.focusScanner.title')}
+                    description={t('home.feature.focusScanner.description')}
                     accentColor="cyan"
                     variant={homeCardHoverVariants}
                     style={{
@@ -252,8 +252,8 @@ export function HomePage() {
 
                 <FeatureCard
                     icon="⚡"
-                    title="Execution Pulse"
-                    description="Real-time reward circuitry providing immediate neuro-feedback as you neutralize tasks. Feel the surge of synthetic dopamine."
+                    title={t('home.feature.executionPulse.title')}
+                    description={t('home.feature.executionPulse.description')}
                     accentColor="green"
                     variant={homeCardHoverVariants}
                     style={{
@@ -266,8 +266,8 @@ export function HomePage() {
 
                 <FeatureCard
                     icon="📡"
-                    title="Operator Evolution"
-                    description="Progress through the ranks, unlock encrypted gear, and specialize your operator class to master specific life domains."
+                    title={t('home.feature.operatorEvolution.title')}
+                    description={t('home.feature.operatorEvolution.description')}
                     accentColor="purple"
                     variant={homeCardHoverVariants}
                     style={{
@@ -295,7 +295,7 @@ export function HomePage() {
                             textShadow: '0 0 10px rgba(0, 255, 255, 0.7)'
                         }}
                     >
-                        INITIALIZE_SEQUENCE
+                        {t('home.initializeSequence')}
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -316,10 +316,10 @@ export function HomePage() {
                                 className="text-[#00ffff] font-bold mb-2 tracking-widest"
                                 style={{ fontFamily: 'Orbitron, sans-serif' }}
                             >
-                                MAP PROTOCOLS
+                                {t('home.steps.mapProtocols.title')}
                             </h4>
                             <p className="text-[#00ffff]/50 text-sm">
-                                Define your habits as targets in the simulation.
+                                {t('home.steps.mapProtocols.description')}
                             </p>
                         </motion.div>
 
@@ -340,10 +340,10 @@ export function HomePage() {
                                 className="text-[#8b5cf6] font-bold mb-2 tracking-widest"
                                 style={{ fontFamily: 'Orbitron, sans-serif' }}
                             >
-                                EXECUTE HUNT
+                                {t('home.steps.executeHunt.title')}
                             </h4>
                             <p className="text-[#00ffff]/50 text-sm">
-                                Track your progress and eliminate daily tasks.
+                                {t('home.steps.executeHunt.description')}
                             </p>
                         </motion.div>
 
@@ -364,10 +364,10 @@ export function HomePage() {
                                 className="text-[#00ff88] font-bold mb-2 tracking-widest"
                                 style={{ fontFamily: 'Orbitron, sans-serif' }}
                             >
-                                ASCEND
+                                {t('home.steps.ascend.title')}
                             </h4>
                             <p className="text-[#00ffff]/50 text-sm">
-                                Level up and customize your operator dashboard.
+                                {t('home.steps.ascend.description')}
                             </p>
                         </motion.div>
                     </div>
@@ -405,7 +405,7 @@ export function HomePage() {
                             border: '2px solid rgba(0, 255, 255, 0.8)'
                         }}
                     >
-                        🚀 LAUNCH MISSION
+                        🚀 {t('home.launchMission')}
                     </Link>
                 </motion.div>
             </motion.section>
