@@ -10,7 +10,7 @@
 
 **Un juego inmersivo en 3D que convierte la gestión de hábitos y tareas en una experiencia épica de combate digital.**
 
-[🎮 Demo](#demo) • [🚀 Inicio Rápido](#-inicio-rápido) • [📖 Guía Completa](#-guía-completa) • [🔧 Instalación](#-instalación) • [☁️ Despliegue](#-despliegue-en-producción)
+[🎮 Demo](https://hackaton.pedrocastellanos.me) • [🚀 Inicio Rápido](#-inicio-rápido) • [📖 Guía Completa](#-guía-completa)
 
 </div>
 
