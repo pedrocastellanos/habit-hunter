@@ -12,7 +12,7 @@
 
 [🎮 Demo](https://hackaton.pedrocastellanos.me) • [🚀 Inicio Rápido](#-inicio-rápido) • [📖 Guía Completa](#-guía-completa)
 
-<img width="1914" height="872" alt="landing" src="https://github.com/user-attachments/assets/1c19bd78-a224-4253-979f-f241581b0731" />
+<img width="1866" height="849" alt="image" src="https://github.com/user-attachments/assets/debde8c2-a65d-4e81-a752-ed43757829ed" />
 
 
 </div>
